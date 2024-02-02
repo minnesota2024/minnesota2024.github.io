@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript">// <![CDATA[
+      function ShowHide(divId)
+      {
+          if(document.getElementById(divId).style.display == 'none')
+          {
+              document.getElementById(divId).style.display='block';
+          }
+          else
+          {
+              document.getElementById(divId).style.display = 'none';
+          }
+      }
+  // ]]></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    Program - CrossFL 2022
+  </title>
+   
+  <link rel="stylesheet" href="/assets/css/main.css" /> 
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  
+</head>
+       
+<body class="pb-4">
+  <header>
+    <!-- navigation bar (web only): -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+  <div class="container">
+
+    <a class="navbar-brand" href="/"> <font size="+3"><strong>CrossFL 2022</strong></font></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          
+          
+            <li class="nav-item active">
+              
+                <a class="nav-link" href="/program/">
+                  Program
+                </a>
+              
+            </li>
+          
+        
+          
+            <!-- <li class="nav-item ">
+              
+                <a class="nav-link" href="/talks/">
+                  Talks
+                </a>
+              
+            </li> -->
+          
+        
+          
+            <li class="nav-item ">
+              
+                <a class="nav-link" href="/speakers/">
+                  Speakers 
+                </a>
+              
+            </li>
+          
+        
+          
+            <li class="nav-item ">
+              
+                <a class="nav-link" href="/committee/">
+                  Committee
+                </a>
+              
+            </li>
+          
+        
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Posters
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown4">
+                
+                  
+                    <a class="dropdown-item" href="/call-for-posters.html">
+                      Call for Posters
+                    </a>
+                  
+                
+                  
+                    <!-- <a class="dropdown-item" href="/camera-ready-instructions.html">
+                      Camera-ready instructions
+                    </a>
+                  
+                
+                  
+                    <a class="dropdown-item" href="/video-presentation-instructions">
+                      Video recording instructions
+                    </a> -->
+                  
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="nav-item ">
+              
+                <a class="nav-link" href="/location/">
+                  Location
+                </a>
+              
+            </li>
+          
+        
+          <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Archive
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown6">
+                
+                  
+                    <a class="dropdown-item" href="/archive/2020">
+                      DistributedML'20
+                    </a>
+                  
+                
+              </div>
+            </li>
+          -->
+        
+      </ul>
+    </div>
+
+    
+    <div class="navbar-brand navbar-logo mr-0 w-25 text-right overflow-hidden">
+      <a class="" href="https://mlsys.org/">
+        
+            <img src="/assets/images/mlsys_logo.png" class="navbar-brand-hideable align-middle logo" alt="MLSys 2022" />
+        
+      </a>
+      <!--
+      <a href="/">
+        
+          <img class="navbar-brand-hideable align-middle logo" src="/assets/images/xfl_logo.png" alt="CrossFL Workshop" />
+        
+      </a>
+      -->
+    </div>
+    
+ 
+  </div>
+</nav>
+
+    
+      <!-- site title (print only): -->
+      <div class="container d-none d-print-block mt-4 mb-4">
+        <h1 class="display-4">
+          CrossFL 2022
+        </h1>
+      </div>
+    
+
+  </header>
+  <main class="container">
+
+    
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+
+    
+    
+  
+
+
+
+
+  <h1 class="display-5 mb-3">
+    
+      Program
+    
+  </h1>
+  
+<p>The workshop will take place in Mission Ballroom MR2, Santa Clara Convention Center on the <strong>1st of September 2022</strong>. </p>
+
+ <br>
+
+
+ <table>
+  <thead>
+    <tr>
+      <th>Time (PST)</th>
+      <th>Title</th>
+      <th>Speaker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>8.55 - 9.00</strong></td>
+      <td>Opening Remarks </td>
+      <td><a href="https://chentianyi1991.github.io/"> Tianyi Chen </a>(RPI) </td>
+    </tr>
+    <tr>
+      <td><strong>9.00 - 9.40</strong></td>
+      <td> <strong>Keynote #1</strong> 
+        <br>
+        ProxSkip: Yes! Local Gradient Steps Provably Lead to Communication Acceleration! Finally! <a onclick="javascript:ShowHide('speaker1')" style="color:#3366BB">[abstract]</a>  <a href="/presentations/ProxSkip-MLSys.pdf"> [slides] </a>
+                                  
+                                  <div class="mid" id="speaker1" style="display: none;">
+                                  <br>
+                                  We introduce ProxSkip - a surprisingly simple and provably efficient method for minimizing the sum of a smooth (<img src=/assets/images/f.svg>) and an expensive nonsmooth proximable (<img src=/assets/images/psi.svg>) function. The canonical approach to solving such problems is via the proximal gradient descent (ProxGD) algorithm, which is based on the evaluation of the gradient of <img src=/assets/images/f.svg> and the prox operator of <img src=/assets/images/psi.svg> in each iteration. In this work we are specifically interested in the regime in which the evaluation of prox is costly relative to the evaluation of the gradient, which is the case in many applications. ProxSkip allows for the expensive prox operator to be skipped in most iterations: while its iteration complexity is <img src=/assets/images/itcomp.svg>, where <img src=/assets/images/kappa.svg> is the condition number of <img src=/assets/images/f.svg>, the number of prox evaluations is <img src=/assets/images/numproxeval.svg> only. Our main motivation comes from federated learning, where evaluation of the gradient operator corresponds to taking a local GD step independently on all devices, and evaluation of prox corresponds to (expensive) communication in the form of gradient averaging. In this context, ProxSkip offers an effective acceleration of communication complexity. Unlike other local gradient-type methods, such as FedAvg, SCAFFOLD, S-Local-GD and FedLin, whose theoretical communication complexity is worse than, or at best matching, that of vanilla GD in the heterogeneous data regime, we obtain a provable and large improvement without any heterogeneity-bounding assumptions. </div>
+      </td>
+      <td>
+           <a href="https://richtarik.org/"> Peter Richtarik </a>(KAUST)
+      </td>
+       
+  </tr>
+  <tr>
+      <td><strong>9.40 - 10.20</strong></td>
+      <td> <strong>Keynote #2</strong> 
+        <br>
+        Three Daunting Challenges of Federated Learning: Privacy Leakage, Label Deficiency, and Resource Constraints <a onclick="javascript:ShowHide('speaker2')" style="color:#3366BB">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker2" style="display: none;">
+        <br>
+                                   Federated learning (FL) has emerged as a promising approach to enable decentralized machine learning directly at the edge, in order to enhance users’ privacy, comply with regulations, and reduce development costs. In this talk, I will provide an overview of FL and highlight three fundamental challenges for landing FL into practice: (1) privacy and security guarantees for FL; (2) label scarcity at the edge; and (3) FL over resource-constrained edge nodes. I will also provide a brief overview of FedML (<a href="https://fedml.ai"> https://fedml.ai </a>), which is a platform that enables zero-code, lightweight, cross-platform, and provably secure federated learning and analytics. </div>
+      </td>
+      <td>
+           <a href="https://www.avestimehr.com/"> Salman Avestimehr </a>(USC)
+      </td>
+       
+  </tr>
+  <tr>
+      <td><strong>10.20 - 11.00</strong></td>
+      <td> <strong>Keynote #3</strong> 
+        <br>
+        Federated Learning for EdgeAI: New Ideas and Opportunities for Progress <a onclick="javascript:ShowHide('speaker3')" style="color:#3366BB">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker3" style="display: none;">
+        <br>
+                                    EdgeAI aims at the widespread deployment of AI on edge devices. To this end, a critical requirement of future ML systems is to enable on-device automated training and inference in distributed settings, wherever and whenever data, devices, or users are present, without sending the training (possibly sensitive) data to the cloud or incurring long response times.
+Starting from these overarching considerations, we consider on-device distributed learning, the hardware it runs on, and their co-design to allow for efficient federated learning and resource-aware deployment on edge devices. We hope to convey the excitement of working in this problem space that brings together topics in ML, optimization, communications, and application-hardware (co-)design. </div>
+      </td>
+      <td>
+           <a href="https://radum.ece.utexas.edu/"> Radu Marculescu </a>(UT Austin)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>11.00 - 11.40</strong></td>
+      <td> <strong>Keynote #4</strong> 
+        <br>
+        Model Based Deep Learning with Applications to Federated Learning <a onclick="javascript:ShowHide('speaker4')" style="color:#3366BB">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker4" style="display: none;">
+        <br>
+                                    Deep neural networks provide unprecedented performance gains in many real-world problems in signal and image processing. Despite these gains, the future development and practical deployment of deep networks are hindered by their black-box nature, i.e., a lack of interpretability and the need for very large training sets. On the other hand, signal processing and communications have traditionally relied on classical statistical modeling techniques that utilize mathematical formulations representing the underlying physics, prior information and additional domain knowledge. Simple classical models are useful but sensitive to inaccuracies and may lead to poor performance when real systems display complex or dynamic behavior. Here we introduce various approaches to model based learning which merge parametric models with optimization tools and classical algorithms leading to efficient, interpretable networks from reasonably sized training sets. We then show how model based signal processing can impact federated learning both in terms of communication efficiency and in terms of convergence properties. We will consider examples to image deblurring, super resolution in ultrasound and microscopy, efficient communication systems, and efficient diagnosis of COVID19 using X-ray and ultrasound. </div>
+      </td>
+      <td>
+           <a href="https://www.weizmann.ac.il/math/yonina/"> Yonina Eldar </a>(Weizmann)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>11.40 - 13.40</strong></td>
+      <td> <strong>Live Demo Session on FedML</strong> 
+        <br>
+        A tutorial followed by a live demo (an interactive session with participants to run FL in FedML platform)
+      </td>
+      <td>
+           <a href="https://chaoyanghe.com/"> Chaoyang He </a>(<a href="https://fedml.ai/">FedML</a>)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>13.40 - 14.20</strong></td>
+      <td> <strong>Keynote #5</strong> 
+        <br>
+       Scalable, Heterogeneity-Aware and Trustworthy Federated Learning <a onclick="javascript:ShowHide('speaker5')" style="color:#3366BB">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker5" style="display: none;">
+        <br>
+        Federated learning has become a popular distributed machine learning paradigm for developing edge AI applications. However, the data residing across the edge devices is intrinsically statistically heterogeneous (i.e., non-IID data distribution) and edge devices usually have limited communication bandwidth to transfer local updates. Such statistical heterogeneity and communication limitation are two major bottlenecks that hinder applying federated learning in practice. In addition, recent works have demonstrated that sharing model updates makes federated learning vulnerable to inference attacks and model poisoning attacks. In this talk, we will present our recent works on novel federated learning frameworks to address the scalability and heterogeneity issues simultaneously. In addition, we will also reveal the essential reason of privacy leakage and model poisoning attacks in federated learning procedures, and provide the defense mechanisms accordingly towards trustworthy federated learning.                         
+                                   </div>                       
+      </td>
+      <td>
+           <a href="https://ece.duke.edu/faculty/yiran-chen"> Yiran Chen </a>(Duke)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>14.20 - 15.00</strong></td>
+      <td> <strong>Keynote #6</strong> 
+        <br>
+        On Lower Bounds of Distributed Learning with Communication Compression <a onclick="javascript:ShowHide('speaker6')" style="color:#3366BB">[abstract]</a> <a href="/presentations/OptimalCompression.pdf"> [slides] </a>
+                                  
+                                  <div class="mid" id="speaker6" style="display: none;">
+        <br>
+                                    There have been many recent works proposing new compressors for various distributed optimization settings. But, all cutting-edge performance analyses come down to one of the only two properties of compressors: unbiasedness or contraction. This leads to a natural question: If we want to improve the convergence rate of distributed optimization with communication compression, should we continue using those properties and focus on how to apply them more cleverly in distributed algorithms, or should we look for new compressor properties? To answer this question, we present theoretical performance lower bounds imposed by those two properties and, then, show that the lower bounds are nearly matched by a method, which works with any compressors satisfying one of those two properties. Hence, future work shall look for a fundamentally new compressor property.
+
+This is joint work with Xinmeng Huang (UPenn), Yiming Chen (Alibaba), and Kun Yuan (Alibaba). </div>
+      </td>
+      <td>
+           <a href="https://www.math.ucla.edu/~wotaoyin/"> Wotao Yin </a>(Alibaba Damo)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>15.00 - 17.00</strong></td>
+      <td> <strong>Poster Session and Best Student Poster Competition</strong> 
+        <br>
+        <ol>
+        <li>Taejin Kim* (CMU), Shubhranshu Singh (CMU), Nikhil Madaan (CMU), Carlee Joe-Wong (CMU). Grey-Box Defense for Personalized Federated Learning <a href="/abstracts/Abstract2.pdf"> [abstract] </a> <a href="/posters/Poster2.pdf"> [poster] </a></li>
+        <li>Ahmed M. Abdelmoniem* (QMUL). Towards Efficient and Practical Federated Learning <a href="/abstracts/Abstract3.pdf"> [abstract] </a> <a href="/posters/Poster3.pdf"> [poster] </a></li>
+        <li>Zexi Li* (ZJU),  Chao Wu (ZJU). Towards Effective Clustered Federated Learning: A Peer-to-peer Framework with Adaptive Neighbor Matching <a href="/abstracts/Abstract4.pdf"> [abstract] </a> <a href="/posters/Poster4.pdf"> [poster] </a></li>
+        <li>Ziang Song* (JHU), Zhuolong Yu (JHU),  Jingfeng Wu (JHU), Lin Yang (UCLA), Vladimir Braverman (JHU). FLLEdge: Federated Lifelong Learning on Edge Devices <a href="/abstracts/Abstract5.pdf"> [abstract] </a> <a href="/posters/Poster5.pdf"> [poster] </a></li>
+        <li>Mohammad Taha Toghani* (Rice),  Cesar Uribe (Rice). Scalable Average Consensus with Compressed Communications <a href="/abstracts/Abstract6.pdf"> [abstract] </a> <a href="/posters/Poster6.pdf"> [poster] </a></li>
+        <li>Tian Chunlin (UM),  Li  Li (UM), Zhan Shi (UM), Jun Wang (UM), Cheng-Zhong Xu (UM). HARMONY: Heterogeneity-Aware Hierarchical Management for Federated Learning System <a href="/abstracts/Abstract8.pdf"> [abstract] </a> <a href="/posters/Poster8.pdf"> [poster] </a></li>
+        <li>Kunjal Panchal* (UMass),  Hui Guan (UMass). Flow: Fine-grained Personalized Federated Learning through Dynamic Routing <a href="/abstracts/Abstract9.pdf"> [abstract] </a> <a href="/posters/Poster9.pdf"> [poster] </a></li>
+        <li>Yongbo Yu* (GMU),  Fuxun Yu (GMU),  Zirui Xu (GMU). Powering Multi-Task Federated Learning with Competitive GPU Resource Sharing <a href="/abstracts/Abstract10.pdf"> [abstract] </a> <a href="/posters/Poster10.pdf"> [poster] </a></li>
+        <li>Yuchen Zeng* (UW Madison), Hongxu Chen (UW Madison), Kangwook Lee (UW Madison). Improving Fairness via Federated Learning <a href="/abstracts/Abstract12.pdf"> [abstract] </a> <a href="/posters/Poster12.pdf"> [poster] </a></li>
+        <li>Sepehr Delpazir* (RIT), Ali Anwar (IBM Research), Nathalie Baracaldo (IBM Research), Khalil Al-Hussaeni (RIT). Understanding Resource Requirements of FL Algorithms <a href="/abstracts/Abstract13.pdf"> [abstract] </a> <a href="/posters/Poster13.pdf"> [poster] </a></li>
+        <li>Xinchi Qiu* (Cambridge), Javier Fernandez-Marques (Samsung AI), Pedro Gusmao (Cambridge), Yan Gao (Newcastle), Titouan Parcollet (Oxford), Nicholas Lane (Cambridge and Samsung AI). On-device Training with Local Sparsity for FL <a href="/abstracts/Abstract14.pdf"> [abstract] </a> <a href="/posters/Poster14.pdf"> [poster] </a></li>
+        <!--<li>Xuefei Li* (RPI),  Han Shen (RPI),  Songtao Lu (IBM Research). Federated Offline Policy Optimization <a href="/abstracts/Abstract15.pdf"> [abstract] </a> <a href="/posters/Poster15.pdf"> [poster] </a></li>
+        <li>Zihan Chen (SUTD), Howard H. Yang* (ZJU-UIUC Institute), Tony  Quek (SUTD). Federated learning over wireless network: an over-the-air computation perspective <a href="/abstracts/Abstract16.pdf"> [abstract] </a> <a href="/posters/Poster16.pdf"> [poster] </a></li> -->
+        <li>Shenghong Dai* (UW Madison), Kangwook Lee (UW Madison), Suman Banerjee (UW Madison). Dynamic Decentralized Federated Learning <a href="/abstracts/Abstract17.pdf"> [abstract] </a> <a href="/posters/Poster17.pdf"> [poster] </a></li>
+        <li>Karthik Pansetty* (CMU), Yuhang Yao (CMU), Mohammad Mahdi Kamani (Wyze), Carlee Joe-Wong (CMU). Personalized Federated Graph Learning <a href="/abstracts/Abstract18.pdf"> [abstract] </a> <a href="/posters/Poster18.pdf"> [poster] </a></li>
+      </ol>
+      <p style="color:red"><strong>Best Paper Award:</strong></p>
+      <ul>
+        <li>Yongbo Yu* (GMU), Fuxun Yu (GMU), Zirui Xu (GMU), Xiang Chen (GMU). Powering Multi-Task Federated Learning with Competitive GPU Resource Sharing</li>
+        <li>Taejin Kim* (CMU), Shubhranshu Singh (CMU), Nikhil Madaan (CMU), Carlee Joe-Wong (CMU). Grey-Box Defense for Personalized Federated Learning</li>
+      </ul> 
+      </td>
+      <td>
+           
+      </td>
+  <tr>
+    <td><strong>17.00 - 17.05</strong></td>
+    <td>Closing Remarks </td>
+    <td>TPC </td>
+  </tr>
+  </tr>
+  </tbody>
+</table>
+     
+ <br> 
+ <p><font size="+2"><strong>Sponsors</strong></font><p>
+  <a class="" href="https://airc.rpi.edu/">
+
+    <img src="./../assets/images/rpi_ibm_airc_logo.png" class="align-middle logo" alt="RPI-IBM AIRC" width="390px" height="42px"/>
+
+  </a> 
+  <span style="padding-left:40px">
+  <a class="" href="https://fedml.ai/">
+
+    <img src="./../assets/images/fedml_logo.png" class="align-middle logo" alt="FedML" width="220px" height="60px"/>
+
+  </a> 
+    
+
+
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>GMT Time</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>11.00 - 11.10</strong></td>
+      <td>Opening remarks (<a href="https://www.youtube.com/watch?v=MYfuBvvefQA">video</a>) <br /> <small> (presented by <a href="https://ds3lab.inf.ethz.ch/members/ce-zhang.html">Ce Zhang</a>) </small></td>
+    </tr>
+    <tr>
+      <td><strong>11.15 - 12.00</strong></td>
+      <td><strong>Keynote #1</strong> <a href="/talks/comms_acceleration_for_training/">Systematic Communication Acceleration for Distributed DNN Training</a> (<a href="https://www.youtube.com/watch?v=xkLHoRtDiCs">video</a>) <br /><small><a href="/speakers/chuanxiong_guo/">Chuanxiong Guo</a> (Bytedance Inc)</small></td>
+    </tr> 
+    <tr>
+      <td><strong>12.00 - 12.40</strong></td>
+      <td><strong>Session #1</strong>: Distributed Learning <small> (co-ordinated by <a href="https://nms.kcl.ac.uk/osvaldo.simeone/index.htm">Osvaldo Simeone</a>) </small> <br />- <a href="https://dl.acm.org/doi/10.1145/3488659.3493778">Doing More by Doing Less: How Structured Partial Backpropagation Improves Deep Learning Clusters</a> (<a href="https://www.dropbox.com/s/1mijlqk3hjso64t/adarsh%20kumar%20-%20JigSawTalk_DistributedML_2021.mp4?dl=0">video</a>) <br /><small>Adarsh Kumar (Amazon Alexa AI), Kausik Subramanian, Shivaram Venkataraman (University of Wisconsin, Madison), Aditya Akella (University of Texas at Austin)</small> <br /> - Invited: Decentralised Deep Learning: Training Large Neural Networks Together (<a href="https://www.youtube.com/watch?v=7ANuu_k27eQ">video</a>) <br /><small> Max Ryabinin (HSE University and Yandex)</small></td>
+    </tr>
+    <tr>
+      <td><strong>12.40 - 12.45</strong></td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td><strong>12.45 - 13.30</strong></td>
+      <td><strong>Keynote #2</strong>: <a href="/talks/fair_or_robust_fl/">Fair or Robust: Addressing Competing Constraints in Federated Learning</a> (<a href="https://www.youtube.com/watch?v=a8B144oSQkE">video</a>) <br /><small><a href="/speakers/virginia_smith/">Virginia Smith</a> (CMU)</small></td>
+    </tr>
+    <tr>
+      <td><strong>13.30 - 14.00</strong></td>
+      <td><strong>Session #2</strong>: Federated Learning <small> (co-ordinated by <a href="https://www.marioalmeida.com/">Mario Almeida</a>) </small> <br /> - <a href="https://dl.acm.org/doi/10.1145/3488659.3493775">FL_PyTorch: Optimization Research Simulator for Federated Learning</a> (<a href="https://www.dropbox.com/s/g7m926h17ldgdge/Konstantin%20Burlachenko%20-%20fl_pytorch_konstantin_burlachenko_h264.mp4?dl=0">video</a>) <br /><small>Konstantin Burlachenko, Samuel Horvath, Peter Richtarik (KAUST) </small> <br />- <a href="https://dl.acm.org/doi/10.1145/3488659.3493776">Secure Aggregation for Federated Learning in Flower</a> (<a href="https://www.dropbox.com/s/q16e98797bp7oia/Hei%20Li%20-%20Hei%20Li%20-%20Presentation%20%28colour%20corrected%29.mp4?dl=0">video</a>) <br /><small>Kwing Hei Li, Pedro Porto Buarque de Gusmão, Daniel J. Beutel, Nicholas D. Lane (University of Cambridge) </small></td>
+    </tr>
+    <tr>
+      <td><strong>14.00 - 14.15</strong></td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td><strong>14.15 - 15.00</strong></td>
+      <td><strong>Keynote #3</strong>: <a href="/talks/toward_practical_fl/">Toward Practical Federated Learning</a> (<a href="https://www.youtube.com/watch?v=gleKgzKlsN4">video</a>)<br /><small><a href="/speakers/mosharaf_chowdhury/">Mosharaf Chowdhury</a> (University of Michigan)</small></td>
+    </tr>
+    <tr>
+      <td><strong>15.00 - 15.30</strong></td>
+      <td><strong>Session #3</strong>: Security &amp; ML <small> (co-ordinated by <a href="https://steliosven10.github.io/">Stylianos Venieris</a>) </small> <br /> - 	<a href="https://dl.acm.org/doi/10.1145/3488659.3493777">Rapid IoT Device Identification at the Edge</a> (<a href="https://www.dropbox.com/s/25j7xtnzp8g8jxf/Oliver%20Thompson%20-%20Rapid_IoT_Identification.mp4?dl=0">video</a>) <br /><small>Oliver Thompson, Anna Maria Mandalari, Hamed Haddadi (Imperial College London)</small> <br />- 	<a href="https://dl.acm.org/doi/10.1145/3488659.3493779">Image Reconstruction Attacks on Distributed Machine Learning Models</a> (<a href="https://www.dropbox.com/s/u1ekx0fsi0s0l1x/Hadjer%20Benkraouda%20-%20DistributedML_Final_hadjer.mp4?dl=0">video</a>) <br /><small> Hadjer Benkraouda, Klara Nahrstedt (University of Illinois at Urbana-Champaign) </small></td>
+    </tr>
+    <tr>
+      <td><strong>15.30 - 15.45</strong></td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td><strong>15.45 - 17.15</strong></td>
+      <td><strong>Panel session</strong> (<a href="https://www.youtube.com/watch?v=BpjiNASR4YA">video</a>) <br /> <small>(co-ordinated by <a href="https://stevelaskaridis.github.io/">Stefanos Laskaridis</a>)</small> <small> <a href="/speakers/vijay_janapa_reddi/">Vijay Janapa Reddi</a> (Harvard University and MLCommons), <a href="/speakers/bo_li/">Bo Li</a> (University of Illinois at Urbana-Champaign), <a href="/speakers/tianyi_chen/">Tianyi Chen</a> (Rensselaer Polytechnic Institute), <a href="/speakers/mosharaf_chowdhury/">Mosharaf Chowdhury</a> (University of Michigan) </small></td>
+    </tr>
+  </tbody>
+</table>
+-->
+  
+
+ 
+
+  </main>
+  <footer class="container"></footer>
+
+  <script src="/assets/js/main.js"></script>
+
+</body>
+</html>
+
