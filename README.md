@@ -1,2 +1,2 @@
-# Spincom2024.github.io
-Website for Spincom 2024
+# minnesota2024.github.io
+Website for Minnesota workshop 2024
